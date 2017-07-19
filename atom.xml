@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2017-07-19T12:42:33.582Z</updated>
+  <updated>2017-07-19T13:39:58.807Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&#39;测试图片上传&#39;</title>
+    <link href="http://blog.douban.help/2017/07/19/testpic/"/>
+    <id>http://blog.douban.help/2017/07/19/testpic/</id>
+    <published>2017-07-19T13:37:15.000Z</published>
+    <updated>2017-07-19T13:39:58.807Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2017/07/19/testpic/cece.jpg" alt="ffff"></p>
+<img src="/2017/07/19/testpic/cece.jpg" alt="this is image" title="this is image">]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/2017/07/19/testpic/cece.jpg&quot; alt=&quot;ffff&quot;&gt;&lt;/p&gt;
+&lt;img src=&quot;/2017/07/19/testpic/cece.jpg&quot; alt=&quot;this is image&quot; title=&quot;this is image&quot;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>嗨你好</title>
