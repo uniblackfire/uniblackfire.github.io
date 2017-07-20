@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2017-07-19T13:50:05.430Z</updated>
+  <updated>2017-07-20T10:36:47.890Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.douban.help/2017/07/19/testpic/"/>
     <id>http://blog.douban.help/2017/07/19/testpic/</id>
     <published>2017-07-19T13:37:15.000Z</published>
-    <updated>2017-07-19T13:50:05.430Z</updated>
+    <updated>2017-07-20T10:36:47.890Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/2017/07/19/testpic/cece.jpg" alt="ffff"></p>
 <img src="/2017/07/19/testpic/cece.jpg" alt="this is image" title="this is image">]]></content>
@@ -32,6 +32,10 @@
     
     </summary>
     
+    
+      <category term="tag1" scheme="http://blog.douban.help/tags/tag1/"/>
+    
+      <category term="tag2" scheme="http://blog.douban.help/tags/tag2/"/>
     
   </entry>
   
