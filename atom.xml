@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2017-07-20T10:36:47.890Z</updated>
+  <updated>2017-07-20T12:11:12.434Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&#39;plan for the next 4 months&#39;</title>
+    <link href="http://blog.douban.help/2017/07/20/planfornext4months/"/>
+    <id>http://blog.douban.help/2017/07/20/planfornext4months/</id>
+    <published>2017-07-20T11:56:58.000Z</published>
+    <updated>2017-07-20T12:11:12.434Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="start-a-new-life"><a href="#start-a-new-life" class="headerlink" title="start a new life"></a>start a new life</h2><ol>
+<li>read <em>Professional JavaScript for Web Developer</em> and make some reading notes</li>
+<li>try to develop a blog site with KOA2</li>
+<li>read blog about javascript</li>
+<li>write down the problems’ resolution encountered in development</li>
+<li>leetcode, dynamic programming</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;start-a-new-life&quot;&gt;&lt;a href=&quot;#start-a-new-life&quot; class=&quot;headerlink&quot; title=&quot;start a new life&quot;&gt;&lt;/a&gt;start a new life&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;read &lt;em
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>测试图片上传</title>
