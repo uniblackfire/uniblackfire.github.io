@@ -65,26 +65,6 @@
   </entry>
   
   <entry>
-    <title>嗨你好</title>
-    <link href="http://blog.douban.help/2017/07/19/test/"/>
-    <id>http://blog.douban.help/2017/07/19/test/</id>
-    <published>2017-07-19T12:38:49.000Z</published>
-    <updated>2017-07-19T12:42:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>abcdabcd我是谁。。。。。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;abcdabcd我是谁。。。。。&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://blog.douban.help/2017/07/19/hello-world/"/>
     <id>http://blog.douban.help/2017/07/19/hello-world/</id>
