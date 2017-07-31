@@ -65,30 +65,6 @@
   </entry>
   
   <entry>
-    <title>测试图片上传</title>
-    <link href="http://blog.douban.help/2017/07/19/testpic/"/>
-    <id>http://blog.douban.help/2017/07/19/testpic/</id>
-    <published>2017-07-19T13:37:15.000Z</published>
-    <updated>2017-07-20T10:36:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/2017/07/19/testpic/cece.jpg" alt="ffff"></p>
-<img src="/2017/07/19/testpic/cece.jpg" alt="this is image" title="this is image">]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/2017/07/19/testpic/cece.jpg&quot; alt=&quot;ffff&quot;&gt;&lt;/p&gt;
-&lt;img src=&quot;/2017/07/19/testpic/cece.jpg&quot; alt=&quot;this is image&quot; title=&quot;this is image&quot;
-    
-    </summary>
-    
-    
-      <category term="tag1" scheme="http://blog.douban.help/tags/tag1/"/>
-    
-      <category term="tag2" scheme="http://blog.douban.help/tags/tag2/"/>
-    
-  </entry>
-  
-  <entry>
     <title>嗨你好</title>
     <link href="http://blog.douban.help/2017/07/19/test/"/>
     <id>http://blog.douban.help/2017/07/19/test/</id>
