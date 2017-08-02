@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2017-07-31T11:54:27.000Z</updated>
+  <updated>2017-08-02T12:49:32.000Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mindmap for learning javascript</title>
+    <link href="http://blog.douban.help/2017/08/02/mindmap-for-learning-javascript/"/>
+    <id>http://blog.douban.help/2017/08/02/mindmap-for-learning-javascript/</id>
+    <published>2017-08-02T12:48:00.000Z</published>
+    <updated>2017-08-02T12:49:32.000Z</updated>
+    
+    <content type="html"><![CDATA[
+]]></content>
+    
+    <summary type="html">
+    
+      
+
+    
+    </summary>
+    
+    
+      <category term="Node.js" scheme="http://blog.douban.help/tags/nodejs/"/>
+    
+  </entry>
   
   <entry>
     <title>tourial for node.js</title>
