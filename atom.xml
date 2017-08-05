@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2017-08-02T12:51:36.000Z</updated>
+  <updated>2017-08-05T02:21:45.000Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>推荐使用云梯VPN</title>
+    <link href="http://blog.douban.help/2017/08/05/yunti/"/>
+    <id>http://blog.douban.help/2017/08/05/yunti/</id>
+    <published>2017-08-05T02:19:35.000Z</published>
+    <updated>2017-08-05T02:21:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>目前使用过的最好用的VPN，速度快且有mac和ios客户端，方便切换不同线路。</p>
+<p>这是我的推荐链接：<br><a href="http://kuaitizi.com/?r=bdb50e0972a1e526" target="_blank" rel="external">http://kuaitizi.com/?r=bdb50e0972a1e526</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;目前使用过的最好用的VPN，速度快且有mac和ios客户端，方便切换不同线路。&lt;/p&gt;
+&lt;p&gt;这是我的推荐链接：&lt;br&gt;&lt;a href=&quot;http://kuaitizi.com/?r=bdb50e0972a1e526&quot; target=&quot;_blank&quot; rel=&quot;extern
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>mindmap for learning javascript</title>
