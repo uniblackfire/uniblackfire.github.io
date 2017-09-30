@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.douban.help/2017/09/30/wechat-public-account/</loc>
+    
+    <lastmod>2017-09-30T13:20:42.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.douban.help/2017/08/26/Understanding-Promise-and-async-await/</loc>
     
-    <lastmod>2017-08-26T10:10:00.000Z</lastmod>
+    <lastmod>2017-08-26T11:04:17.000Z</lastmod>
     
   </url>
   
