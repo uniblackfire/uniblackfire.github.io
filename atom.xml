@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2017-10-15T04:56:05.000Z</updated>
+  <updated>2017-12-10T01:18:51.001Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建react开发框架</title>
+    <link href="http://blog.douban.help/2017/12/04/%E6%90%AD%E5%BB%BAreact%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
+    <id>http://blog.douban.help/2017/12/04/搭建react开发框架/</id>
+    <published>2017-12-04T09:12:24.000Z</published>
+    <updated>2017-12-10T01:18:51.001Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="搭建教程"><a href="#搭建教程" class="headerlink" title="搭建教程"></a>搭建教程</h2><ol>
+<li><a href="https://github.com/brickspert/blog/issues/1" target="_blank" rel="external">学习搭建react开发框架</a></li>
+</ol>
+<h2 id="踩坑"><a href="#踩坑" class="headerlink" title="踩坑"></a>踩坑</h2><ol>
+<li><a href="https://zhuanlan.zhihu.com/p/30401565" target="_blank" rel="external">render和之前的生命周期函数请不要async！</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;搭建教程&quot;&gt;&lt;a href=&quot;#搭建教程&quot; class=&quot;headerlink&quot; title=&quot;搭建教程&quot;&gt;&lt;/a&gt;搭建教程&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/brickspert/blog/issues/1&quot; ta
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>koa2 add router rules</title>
@@ -86,27 +111,6 @@
     
     
       <category term="Node.js" scheme="http://blog.douban.help/tags/nodejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>推荐使用云梯VPN</title>
-    <link href="http://blog.douban.help/2017/08/05/yunti/"/>
-    <id>http://blog.douban.help/2017/08/05/yunti/</id>
-    <published>2017-08-05T02:19:35.000Z</published>
-    <updated>2017-08-05T02:25:05.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>目前使用过的最好用的VPN，速度快且有mac和ios客户端，方便切换不同线路。</p>
-<p>这是我的推荐链接，点击购买可以优惠10元：<br><a href="http://kuaitizi.com/?r=bdb50e0972a1e526" target="_blank" rel="external">http://kuaitizi.com/?r=bdb50e0972a1e526</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;目前使用过的最好用的VPN，速度快且有mac和ios客户端，方便切换不同线路。&lt;/p&gt;
-&lt;p&gt;这是我的推荐链接，点击购买可以优惠10元：&lt;br&gt;&lt;a href=&quot;http://kuaitizi.com/?r=bdb50e0972a1e526&quot; target=&quot;_blank&quot;
-    
-    </summary>
-    
     
   </entry>
   
