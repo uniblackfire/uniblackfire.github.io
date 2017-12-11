@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2017-12-10T07:16:05.044Z</updated>
+  <updated>2017-12-11T06:18:49.467Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.douban.help/2017/12/04/%E6%90%AD%E5%BB%BAreact%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
     <id>http://blog.douban.help/2017/12/04/搭建react开发框架/</id>
     <published>2017-12-04T09:12:24.000Z</published>
-    <updated>2017-12-10T07:16:05.044Z</updated>
+    <updated>2017-12-11T06:18:49.467Z</updated>
     
     <content type="html"><![CDATA[<h2 id="tutorial"><a href="#tutorial" class="headerlink" title="tutorial"></a>tutorial</h2><ol>
 <li><a href="https://github.com/brickspert/blog/issues/1" target="_blank" rel="external">学习搭建react开发框架</a></li>
@@ -28,6 +28,9 @@
 <h2 id="basic"><a href="#basic" class="headerlink" title="basic"></a>basic</h2><ol>
 <li><a href="https://www.w3schools.com/css/css_examples.asp" target="_blank" rel="external">CSS Examples</a></li>
 <li><a href="https://www.w3schools.com/jquery/jquery_examples.asp" target="_blank" rel="external">jQuery Examples</a></li>
+</ol>
+<h2 id="doc"><a href="#doc" class="headerlink" title="doc"></a>doc</h2><ol>
+<li><a href="https://devdocs.io/" target="_blank" rel="external">dev docs 在线版Dash</a></li>
 </ol>
 <h2 id="React"><a href="#React" class="headerlink" title="React"></a>React</h2><ol>
 <li><a href="https://zhuanlan.zhihu.com/p/30401565" target="_blank" rel="external">render和之前的生命周期函数请不要async！</a></li>
