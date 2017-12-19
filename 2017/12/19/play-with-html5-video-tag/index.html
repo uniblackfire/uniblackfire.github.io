@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="wechat," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -95,18 +95,17 @@
 
 
 
-<meta name="description" content="晚上买了一周的阿里云服务器，然后利用github上开源的nodejs库（https://github.com/node-webot/co-wechat ，https://github.com/node-webot/co-wechat-api ），搭建了API服务器，sftp上传到阿里云（阿里云提供了可以ssh登录到公网IP）上，就可以用了。 SSH上启动服务不能直接用node命令启动，必须用sc">
-<meta name="keywords" content="wechat">
+<meta name="description" content="problems encounted when start play a video on iOS’s Safari and Wechat browser, it will enter fullscreen but not play in line 1&amp;lt;video controls=&quot;&quot; playsInline  webkit-playsinline=&quot;true&quot; x5-playsinlin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wechat public account development">
-<meta property="og:url" content="http://blog.douban.help/2017/09/30/wechat-public-account/index.html">
+<meta property="og:title" content="play with html5 &lt;video&gt; tag">
+<meta property="og:url" content="http://blog.douban.help/2017/12/19/play-with-html5-video-tag/index.html">
 <meta property="og:site_name" content="doubanhelp">
-<meta property="og:description" content="晚上买了一周的阿里云服务器，然后利用github上开源的nodejs库（https://github.com/node-webot/co-wechat ，https://github.com/node-webot/co-wechat-api ），搭建了API服务器，sftp上传到阿里云（阿里云提供了可以ssh登录到公网IP）上，就可以用了。 SSH上启动服务不能直接用node命令启动，必须用sc">
+<meta property="og:description" content="problems encounted when start play a video on iOS’s Safari and Wechat browser, it will enter fullscreen but not play in line 1&amp;lt;video controls=&quot;&quot; playsInline  webkit-playsinline=&quot;true&quot; x5-playsinlin">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-09-30T13:23:22.000Z">
+<meta property="og:updated_time" content="2017-12-19T08:17:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wechat public account development">
-<meta name="twitter:description" content="晚上买了一周的阿里云服务器，然后利用github上开源的nodejs库（https://github.com/node-webot/co-wechat ，https://github.com/node-webot/co-wechat-api ），搭建了API服务器，sftp上传到阿里云（阿里云提供了可以ssh登录到公网IP）上，就可以用了。 SSH上启动服务不能直接用node命令启动，必须用sc">
+<meta name="twitter:title" content="play with html5 &lt;video&gt; tag">
+<meta name="twitter:description" content="problems encounted when start play a video on iOS’s Safari and Wechat browser, it will enter fullscreen but not play in line 1&amp;lt;video controls=&quot;&quot; playsInline  webkit-playsinline=&quot;true&quot; x5-playsinlin">
 
 
 
@@ -134,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.douban.help/2017/09/30/wechat-public-account/"/>
+  <link rel="canonical" href="http://blog.douban.help/2017/12/19/play-with-html5-video-tag/"/>
 
 
 
 
 
-  <title>wechat public account development | doubanhelp</title>
+  <title>play with html5 <video> tag | doubanhelp</title>
   
 
 
@@ -299,7 +298,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2017/09/30/wechat-public-account/">
+    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2017/12/19/play-with-html5-video-tag/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="bazinga">
@@ -316,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">wechat public account development</h1>
+          <h1 class="post-title" itemprop="name headline">play with html5 <video> tag</h1>
         
 
         <div class="post-meta">
@@ -328,8 +327,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-30T21:19:54+08:00">
-                2017-09-30
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-19T15:55:44+08:00">
+                2017-12-19
               </time>
             
 
@@ -363,13 +362,28 @@
       
 
       
-        <ul>
-<li>晚上买了一周的阿里云服务器，然后利用github上开源的nodejs库（<a href="https://github.com/node-webot/co-wechat" target="_blank" rel="external">https://github.com/node-webot/co-wechat</a> ，<a href="https://github.com/node-webot/co-wechat-api" target="_blank" rel="external">https://github.com/node-webot/co-wechat-api</a> ），搭建了API服务器，sftp上传到阿里云（阿里云提供了可以ssh登录到公网IP）上，就可以用了。</li>
-<li>SSH上启动服务不能直接用node命令启动，必须用screen命令启动，避免ssh关闭的时候把服务也关闭掉（<a href="http://www.hutuseng.com/article/how-to-kill-all-detached-screen-session-in-linux" target="_blank" rel="external">http://www.hutuseng.com/article/how-to-kill-all-detached-screen-session-in-linux</a> ）。</li>
-<li>Cyberduck是一款Mac上的可视化文件传输工具。</li>
-<li>其实Webstorm也提供了SFTP上传功能，完全不需要其他工具。</li>
-<li>利用nginx代理node程序的端口，对外提供80服务（<a href="http://frontenddev.org/article/ali-cloud-ecs-use-result-6-use-nginx-do-reverse-proxy-for-nodejs.html" target="_blank" rel="external">http://frontenddev.org/article/ali-cloud-ecs-use-result-6-use-nginx-do-reverse-proxy-for-nodejs.html</a> ）。</li>
-</ul>
+        <h2 id="problems-encounted"><a href="#problems-encounted" class="headerlink" title="problems encounted"></a>problems encounted</h2><ol>
+<li><p>when start play a video on iOS’s Safari and Wechat browser, it will enter fullscreen but not play in line</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">controls</span>=<span class="string">""</span> <span class="attr">playsInline</span>  <span class="attr">webkit-playsinline</span>=<span class="string">"true"</span> <span class="attr">x5-playsinline</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>video duration can be achieved when <code>durationchange</code> event fired</p>
+</li>
+<li><p><code>canplay</code> event will not fired when video loaded on iPhone iOS 11 Safari even I add <code>preload=&quot;auto&quot;</code> prop, but fired on iPad iOS 10 Safari</p>
+</li>
+</ol>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
+<li><a href="http://zhaoda.net/2014/10/30/html5-video-optimization/" target="_blank" rel="external">移动端 HTML5 <video> 视频播放优化实践</video></a></li>
+<li><a href="https://github.com/gnipbao/iblog/issues/11" target="_blank" rel="external">视频H5 video标签最佳实践</a></li>
+<li><a href="https://juejin.im/entry/59509faf6fb9a06bc7493041" target="_blank" rel="external">移动端 HTML5 video 视频播放实践</a></li>
+<li><a href="https://webkit.org/blog/6784/new-video-policies-for-ios/" target="_blank" rel="external">New <video> Policies for iOS</video></a></li>
+<li><a href="http://web.jobbole.com/92906/" target="_blank" rel="external">这几年，我在video上踩的坑</a></li>
+<li><a href="https://github.com/Chimeejs/chimee/blob/master/doc/zh-cn/why-chimee-is-a-frame.md" target="_blank" rel="external">为什么要将 Chimee 设计成一个组件化框架？</a></li>
+<li><a href="https://aotu.io/notes/2017/01/11/mobile-video/index.html" target="_blank" rel="external">视频H5のVideo标签在微信里的坑和技巧</a></li>
+<li><a href="https://blog.brain1981.com/1399.html" target="_blank" rel="external">关于HTML5 video标签在安卓版微信浏览器内被强制全屏播放的问题</a></li>
+<li><a href="https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/cross_browser_video_player" target="_blank" rel="external">Creating a cross-browser video player</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats" target="_blank" rel="external">Media formats for HTML audio and video</a></li>
+<li><a href="http://www.w3school.com.cn/tags/html_ref_audio_video_dom.asp" target="_blank" rel="external">HTML 5 视频/音频参考手册</a></li>
+</ol>
 
       
     </div>
@@ -397,12 +411,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/wechat/" rel="tag"># wechat</a>
-          
-        </div>
-      
 
       
       
@@ -412,8 +420,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/26/Understanding-Promise-and-async-await/" rel="next" title="Understanding Promise and async/await">
-                <i class="fa fa-chevron-left"></i> Understanding Promise and async/await
+              <a href="/2017/12/14/some-bash-command/" rel="next" title="some bash command">
+                <i class="fa fa-chevron-left"></i> some bash command
               </a>
             
           </div>
@@ -421,10 +429,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/15/koa2-add-router-rules/" rel="prev" title="koa2 add router rules">
-                koa2 add router rules <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -472,8 +476,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -533,6 +546,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#problems-encounted"><span class="nav-number">1.</span> <span class="nav-text">problems encounted</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">2.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

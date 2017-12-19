@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2017-12-14T07:47:40.007Z</updated>
+  <updated>2017-12-19T08:17:17.000Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -14,6 +14,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>play with html5 &lt;video&gt; tag</title>
+    <link href="http://blog.douban.help/2017/12/19/play-with-html5-video-tag/"/>
+    <id>http://blog.douban.help/2017/12/19/play-with-html5-video-tag/</id>
+    <published>2017-12-19T07:55:44.000Z</published>
+    <updated>2017-12-19T08:17:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="problems-encounted"><a href="#problems-encounted" class="headerlink" title="problems encounted"></a>problems encounted</h2><ol>
+<li><p>when start play a video on iOS’s Safari and Wechat browser, it will enter fullscreen but not play in line</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">controls</span>=<span class="string">""</span> <span class="attr">playsInline</span>  <span class="attr">webkit-playsinline</span>=<span class="string">"true"</span> <span class="attr">x5-playsinline</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>video duration can be achieved when <code>durationchange</code> event fired</p>
+</li>
+<li><p><code>canplay</code> event will not fired when video loaded on iPhone iOS 11 Safari even I add <code>preload=&quot;auto&quot;</code> prop, but fired on iPad iOS 10 Safari</p>
+</li>
+</ol>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
+<li><a href="http://zhaoda.net/2014/10/30/html5-video-optimization/" target="_blank" rel="external">移动端 HTML5 <video> 视频播放优化实践</video></a></li>
+<li><a href="https://github.com/gnipbao/iblog/issues/11" target="_blank" rel="external">视频H5 video标签最佳实践</a></li>
+<li><a href="https://juejin.im/entry/59509faf6fb9a06bc7493041" target="_blank" rel="external">移动端 HTML5 video 视频播放实践</a></li>
+<li><a href="https://webkit.org/blog/6784/new-video-policies-for-ios/" target="_blank" rel="external">New <video> Policies for iOS</video></a></li>
+<li><a href="http://web.jobbole.com/92906/" target="_blank" rel="external">这几年，我在video上踩的坑</a></li>
+<li><a href="https://github.com/Chimeejs/chimee/blob/master/doc/zh-cn/why-chimee-is-a-frame.md" target="_blank" rel="external">为什么要将 Chimee 设计成一个组件化框架？</a></li>
+<li><a href="https://aotu.io/notes/2017/01/11/mobile-video/index.html" target="_blank" rel="external">视频H5のVideo标签在微信里的坑和技巧</a></li>
+<li><a href="https://blog.brain1981.com/1399.html" target="_blank" rel="external">关于HTML5 video标签在安卓版微信浏览器内被强制全屏播放的问题</a></li>
+<li><a href="https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/cross_browser_video_player" target="_blank" rel="external">Creating a cross-browser video player</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats" target="_blank" rel="external">Media formats for HTML audio and video</a></li>
+<li><a href="http://www.w3school.com.cn/tags/html_ref_audio_video_dom.asp" target="_blank" rel="external">HTML 5 视频/音频参考手册</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;problems-encounted&quot;&gt;&lt;a href=&quot;#problems-encounted&quot; class=&quot;headerlink&quot; title=&quot;problems encounted&quot;&gt;&lt;/a&gt;problems encounted&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>some bash command</title>
@@ -42,7 +83,7 @@
     <link href="http://blog.douban.help/2017/12/04/%E6%90%AD%E5%BB%BAreact%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
     <id>http://blog.douban.help/2017/12/04/搭建react开发框架/</id>
     <published>2017-12-04T09:12:24.000Z</published>
-    <updated>2017-12-11T06:20:34.270Z</updated>
+    <updated>2017-12-19T07:54:39.717Z</updated>
     
     <content type="html"><![CDATA[<h2 id="tutorial"><a href="#tutorial" class="headerlink" title="tutorial"></a>tutorial</h2><ol>
 <li><a href="https://github.com/brickspert/blog/issues/1" target="_blank" rel="external">学习搭建react开发框架</a></li>
