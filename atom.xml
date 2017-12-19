@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2017-12-19T08:20:40.587Z</updated>
+  <updated>2017-12-19T08:21:27.913Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>play with html5 &lt;video&gt; tag</title>
+    <title>play with html5 video tag</title>
     <link href="http://blog.douban.help/2017/12/19/play-with-html5-video-tag/"/>
     <id>http://blog.douban.help/2017/12/19/play-with-html5-video-tag/</id>
     <published>2017-12-19T07:55:44.000Z</published>
-    <updated>2017-12-19T08:20:40.587Z</updated>
+    <updated>2017-12-19T08:21:27.913Z</updated>
     
     <content type="html"><![CDATA[<h2 id="problems-encounted"><a href="#problems-encounted" class="headerlink" title="problems encounted"></a>problems encounted</h2><ol>
 <li><p>when start play a video on iOS’s Safari and Wechat browser, it will enter fullscreen but not play in line</p>
