@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2017-12-19T08:21:27.913Z</updated>
+  <updated>2017-12-29T02:44:22.000Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>something about module in nodejs</title>
+    <link href="http://blog.douban.help/2017/12/29/something-about-module-in-nodejs/"/>
+    <id>http://blog.douban.help/2017/12/29/something-about-module-in-nodejs/</id>
+    <published>2017-12-29T02:41:35.000Z</published>
+    <updated>2017-12-29T02:44:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="require-object-is-just-a-shallow-copy-of-module-exports"><a href="#require-object-is-just-a-shallow-copy-of-module-exports" class="headerlink" title="require object is just a shallow copy of module exports"></a>require object is just a shallow copy of module exports</h2><p>test code as below:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// main.js</span></div><div class="line"><span class="keyword">var</span> a = <span class="built_in">require</span>(<span class="string">'./mod'</span>)</div><div class="line"></div><div class="line">setInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in main'</span>, a.aaa)</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in main'</span>, a.x)</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'======'</span>);</div><div class="line">&#125;, <span class="number">500</span>);</div><div class="line"></div><div class="line"><span class="comment">// mod.js</span></div><div class="line"><span class="keyword">let</span> aaa = &#123;<span class="attr">a</span>: <span class="number">3</span>, <span class="attr">b</span>: &#123;<span class="attr">xx</span>: <span class="number">1</span>&#125;&#125;</div><div class="line"><span class="keyword">let</span> x = <span class="number">1</span></div><div class="line">setInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">    aaa.a++;</div><div class="line">    aaa.b.xx += <span class="number">1</span>;</div><div class="line">    x++;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in mod'</span>, aaa)</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in mod'</span>, x)</div><div class="line">&#125;, <span class="number">500</span>);</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = &#123;<span class="attr">aaa</span>: aaa, <span class="attr">x</span>: x&#125;;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;require-object-is-just-a-shallow-copy-of-module-exports&quot;&gt;&lt;a href=&quot;#require-object-is-just-a-shallow-copy-of-module-exports&quot; class=&quot;h
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>play with html5 video tag</title>

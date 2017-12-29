@@ -95,16 +95,17 @@
 
 
 
-<meta name="description" content="javascript, python, back-end, node.js">
-<meta property="og:type" content="website">
-<meta property="og:title" content="doubanhelp">
-<meta property="og:url" content="http://blog.douban.help/archives/index.html">
+<meta name="description" content="require object is just a shallow copy of module exportstest code as below: 12345678910111213141516171819202122// main.jsvar a = require(&apos;./mod&apos;)setInterval(() =&amp;gt; &amp;#123;    console.log(&apos;in main&apos;, a.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="something about module in nodejs">
+<meta property="og:url" content="http://blog.douban.help/2017/12/29/something-about-module-in-nodejs/index.html">
 <meta property="og:site_name" content="doubanhelp">
-<meta property="og:description" content="javascript, python, back-end, node.js">
+<meta property="og:description" content="require object is just a shallow copy of module exportstest code as below: 12345678910111213141516171819202122// main.jsvar a = require(&apos;./mod&apos;)setInterval(() =&amp;gt; &amp;#123;    console.log(&apos;in main&apos;, a.">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-12-29T02:44:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="doubanhelp">
-<meta name="twitter:description" content="javascript, python, back-end, node.js">
+<meta name="twitter:title" content="something about module in nodejs">
+<meta name="twitter:description" content="require object is just a shallow copy of module exportstest code as below: 12345678910111213141516171819202122// main.jsvar a = require(&apos;./mod&apos;)setInterval(() =&amp;gt; &amp;#123;    console.log(&apos;in main&apos;, a.">
 
 
 
@@ -132,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.douban.help/archives/"/>
+  <link rel="canonical" href="http://blog.douban.help/2017/12/29/something-about-module-in-nodejs/"/>
 
 
 
 
 
-  <title>Archive | doubanhelp</title>
+  <title>something about module in nodejs | doubanhelp</title>
   
 
 
@@ -163,7 +164,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -287,403 +288,143 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      Um..! 11 posts in total. Keep on posting.
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2017/12/29/something-about-module-in-nodejs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bazinga">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="doubanhelp">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">something about module in nodejs</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-29T10:41:35+08:00">
+                2017-12-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <h2 id="require-object-is-just-a-shallow-copy-of-module-exports"><a href="#require-object-is-just-a-shallow-copy-of-module-exports" class="headerlink" title="require object is just a shallow copy of module exports"></a>require object is just a shallow copy of module exports</h2><p>test code as below:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// main.js</span></div><div class="line"><span class="keyword">var</span> a = <span class="built_in">require</span>(<span class="string">'./mod'</span>)</div><div class="line"></div><div class="line">setInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in main'</span>, a.aaa)</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in main'</span>, a.x)</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'======'</span>);</div><div class="line">&#125;, <span class="number">500</span>);</div><div class="line"></div><div class="line"><span class="comment">// mod.js</span></div><div class="line"><span class="keyword">let</span> aaa = &#123;<span class="attr">a</span>: <span class="number">3</span>, <span class="attr">b</span>: &#123;<span class="attr">xx</span>: <span class="number">1</span>&#125;&#125;</div><div class="line"><span class="keyword">let</span> x = <span class="number">1</span></div><div class="line">setInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">    aaa.a++;</div><div class="line">    aaa.b.xx += <span class="number">1</span>;</div><div class="line">    x++;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in mod'</span>, aaa)</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in mod'</span>, x)</div><div class="line">&#125;, <span class="number">500</span>);</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = &#123;<span class="attr">aaa</span>: aaa, <span class="attr">x</span>: x&#125;;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/19/play-with-html5-video-tag/" rel="next" title="play with html5 video tag">
+                <i class="fa fa-chevron-left"></i> play with html5 video tag
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
         </div>
       
-      
 
       
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/29/something-about-module-in-nodejs/" itemprop="url">
-              
-                <span itemprop="name">something about module in nodejs</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-29T10:41:35+08:00"
-              content="2017-12-29" >
-          12-29
-        </time>
-      </div>
-
-    </header>
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/19/play-with-html5-video-tag/" itemprop="url">
-              
-                <span itemprop="name">play with html5 video tag</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-19T15:55:44+08:00"
-              content="2017-12-19" >
-          12-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/14/some-bash-command/" itemprop="url">
-              
-                <span itemprop="name">some bash command</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-14T15:46:04+08:00"
-              content="2017-12-14" >
-          12-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/04/搭建react开发框架/" itemprop="url">
-              
-                <span itemprop="name">搭建react开发框架</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-04T17:12:24+08:00"
-              content="2017-12-04" >
-          12-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/15/koa2-add-router-rules/" itemprop="url">
-              
-                <span itemprop="name">koa2 add router rules</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-15T12:50:06+08:00"
-              content="2017-10-15" >
-          10-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/30/wechat-public-account/" itemprop="url">
-              
-                <span itemprop="name">wechat public account development</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-30T21:19:54+08:00"
-              content="2017-09-30" >
-          09-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/26/Understanding-Promise-and-async-await/" itemprop="url">
-              
-                <span itemprop="name">Understanding Promise and async/await</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-26T18:08:10+08:00"
-              content="2017-08-26" >
-          08-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/02/mindmap-for-learning-javascript/" itemprop="url">
-              
-                <span itemprop="name">mindmap for learning javascript</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-02T20:48:00+08:00"
-              content="2017-08-02" >
-          08-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/31/tourial-for-node-js/" itemprop="url">
-              
-                <span itemprop="name">tourial for node.js</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-31T19:42:03+08:00"
-              content="2017-07-31" >
-          07-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/07/20/planfornext4months/" itemprop="url">
-              
-                <span itemprop="name">plan for the next 4 months</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-20T19:56:58+08:00"
-              content="2017-07-20" >
-          07-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
-
+    </div>
+  </div>
 
 
           </div>
@@ -691,6 +432,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -711,8 +456,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -772,6 +526,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#require-object-is-just-a-shallow-copy-of-module-exports"><span class="nav-number">1.</span> <span class="nav-text">require object is just a shallow copy of module exports</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -892,11 +662,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   
