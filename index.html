@@ -299,6 +299,127 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2018/01/18/notes-about-some-frequently-used-function/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bazinga">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="doubanhelp">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/18/notes-about-some-frequently-used-function/" itemprop="url">notes about some frequently used function</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-18T22:00:36+08:00">
+                2018-01-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>all src are tested with node v8.9.0</p>
+</blockquote>
+<h3 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h3><p>this func will not modify array itself<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [&#123;<span class="attr">a</span>:<span class="number">3</span>&#125;, <span class="number">2</span>, <span class="string">'fff'</span>]</div><div class="line">arr.forEach(<span class="function">(<span class="params">item</span>)=&gt;</span>&#123;</div><div class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span> item === <span class="string">'object'</span>) &#123;</div><div class="line">        item.a = <span class="string">'aaa'</span></div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span> &#123;</div><div class="line">        item = <span class="number">3</span></div><div class="line">    &#125;</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(arr)</div></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[ &#123; a: <span class="string">'aaa'</span> &#125;, 2, <span class="string">'fff'</span> ]</div></pre></td></tr></table></figure>
+<h3 id="map"><a href="#map" class="headerlink" title="map"></a>map</h3><p>returned item is a shallow copy</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = [&#123;<span class="attr">a</span>:<span class="number">3</span>&#125;, <span class="number">4</span>, <span class="string">'fff'</span>]</div><div class="line"></div><div class="line"><span class="keyword">let</span> brr = arr.map(<span class="function">(<span class="params">item</span>)=&gt;</span>&#123;</div><div class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span> item === <span class="string">'object'</span>) &#123;</div><div class="line">        item.a = <span class="number">1111</span></div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> item</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(arr)</div><div class="line"><span class="built_in">console</span>.log(brr)</div><div class="line"><span class="built_in">console</span>.log(arr[<span class="number">0</span>]===brr[<span class="number">0</span>])</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[ &#123; a: 1111 &#125;, 4, <span class="string">'fff'</span> ]</div><div class="line">[ &#123; a: 1111 &#125;, 4, <span class="string">'fff'</span> ]</div><div class="line"><span class="literal">true</span></div></pre></td></tr></table></figure>
+<h3 id="func-which-will-return-new-object"><a href="#func-which-will-return-new-object" class="headerlink" title="func which will return new object"></a>func which will return new object</h3><p>concat<br>map</p>
+<h3 id="in-place-func"><a href="#in-place-func" class="headerlink" title="in place func"></a>in place func</h3><p>reverse<br>sort</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2017/12/29/something-about-module-in-nodejs/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1356,124 +1477,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2017/07/20/planfornext4months/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bazinga">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="doubanhelp">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/20/planfornext4months/" itemprop="url">plan for the next 4 months</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-20T19:56:58+08:00">
-                2017-07-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="start-a-new-life"><a href="#start-a-new-life" class="headerlink" title="start a new life"></a>start a new life</h2><ol>
-<li>read <em>Professional JavaScript for Web Developer</em> and make some reading notes</li>
-<li>try to develop a blog site with KOA2</li>
-<li>read blog about javascript</li>
-<li>write down the problems’ resolution encountered in development</li>
-<li>leetcode, dynamic programming</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1524,7 +1527,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1586,7 +1589,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
