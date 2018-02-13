@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2018-01-18T14:01:07.000Z</updated>
+  <updated>2018-02-13T00:16:31.386Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>管理学习进度</title>
+    <link href="http://blog.douban.help/2018/02/13/%E7%AE%A1%E7%90%86%E5%AD%A6%E4%B9%A0%E8%BF%9B%E5%BA%A6/"/>
+    <id>http://blog.douban.help/2018/02/13/管理学习进度/</id>
+    <published>2018-02-13T00:01:17.000Z</published>
+    <updated>2018-02-13T00:16:31.386Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="为什么想到这个"><a href="#为什么想到这个" class="headerlink" title="为什么想到这个"></a>为什么想到这个</h2><p>工作以来，为了提升个人能力，一直不断松懈学习。之前看到一篇技术文章，令我感到反思的不是文章的内容，而是作者的学习方法，所以做了这样的思维导图：<br><img src="/2018/02/13/管理学习进度/study.png" alt="study.png" title=""></p>
+<h2 id="之前的做法"><a href="#之前的做法" class="headerlink" title="之前的做法"></a>之前的做法</h2><ol>
+<li>打印日历进行记录（缺点是需要打印，且没有提醒）</li>
+<li>利用 numbers 表格记录每日学习内容，完成之后便划掉（需要另外打开软件，无提醒，不方便修改）</li>
+<li>利用 wunderlist 记录（无进度）</li>
+</ol>
+<h2 id="考虑结合-google-cal-进行管理"><a href="#考虑结合-google-cal-进行管理" class="headerlink" title="考虑结合 google cal 进行管理"></a>考虑结合 google cal 进行管理</h2><h3 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h3><ol>
+<li>多平台同步，web、mac、iphone等都可以看到</li>
+<li>不需要另外的软件</li>
+<li>可以利用 week calendar 进行快速标记完成，高亮等操作</li>
+</ol>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
+<li>在 google cal 上新建一个日历，以和其他日历内容区隔</li>
+<li>下面是 week calendar 的主界面，可以看到我已经配置了一些日历内容</li>
+<li>打开右上角的设置</li>
+<li>点击工具菜单，可以配置快捷操作，我在这里设置了两个，一个是快速标记完成✅，另外一个是高亮
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;为什么想到这个&quot;&gt;&lt;a href=&quot;#为什么想到这个&quot; class=&quot;headerlink&quot; title=&quot;为什么想到这个&quot;&gt;&lt;/a&gt;为什么想到这个&lt;/h2&gt;&lt;p&gt;工作以来，为了提升个人能力，一直不断松懈学习。之前看到一篇技术文章，令我感到反思的不是文章的内容，而
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>notes about some frequently used function</title>
