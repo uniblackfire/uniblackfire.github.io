@@ -299,6 +299,146 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2018/04/05/how-to-modify-server-response-with-charles/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bazinga">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="doubanhelp">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/05/how-to-modify-server-response-with-charles/" itemprop="url">how to modify server response with charles</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-05T12:21:37+08:00">
+                2018-04-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>网易云音乐在朋友圈刷了一波<a href="https://st.music.163.com/c/m2-spec/138/index.html?userid=52543138" target="_blank" rel="external">推广活动</a>，一进去要输入名字，但是我玩法比较怪，输入的是一些名人的名字，结果被提示“不是你的名字”。<br>于是，把网址放到chrome里，打开dev tool查看，发现提交到服务器进行了验证，而且只要命中名人名字中的两个字，就会被提示报错，你们的算法还挺细致的，哈哈。<br><img src="/2018/04/05/how-to-modify-server-response-with-charles/haha.png" alt="haha.png" title=""></p>
+<p>比较了一下前端请求验证名字的请求后，服务器返回的验证结果，发现只有最后一个字段不同，猜测前端判断了这个结果，于是想到拦截修改服务器的返回结果，骗过前端程序。<br><img src="/2018/04/05/how-to-modify-server-response-with-charles/respdata.png" alt="respdata.png" title=""></p>
+<h1 id="尝试了不同的方法"><a href="#尝试了不同的方法" class="headerlink" title="尝试了不同的方法"></a>尝试了不同的方法</h1><h2 id="map-local"><a href="#map-local" class="headerlink" title="map local"></a>map local</h2><ol>
+<li>右键点击验证请求，选择<code>save response</code>，保存响应文件</li>
+<li>按下<code>⌥⌘L</code>打开<code>Map Local Setting</code>对话框，并增加新的mapping<img src="/2018/04/05/how-to-modify-server-response-with-charles/maplocalmain.png" alt="maplocalmain.png" title="">
+</li>
+</ol>
+<blockquote>
+<p>再次尝试通过前端发送请求，确实修改了响应结果，但是由于保存的响应文件只有body的内容，没有header的内容，在这里报了一个跨域的错误，因此这个方法失败了。</p>
+</blockquote>
+<h2 id="rewrite"><a href="#rewrite" class="headerlink" title="rewrite"></a>rewrite</h2><ol>
+<li>按下<code>⌥⌘L</code>打开<code>Rewrite Settings</code>对话框，直接输入需要重写的内容<img src="/2018/04/05/how-to-modify-server-response-with-charles/rewritesetting.png" alt="rewritesetting.png" title="">
+</li>
+</ol>
+<blockquote>
+<p>此时请求之后返回的结果只修改了body部分，别的部分都是原样输出，已经通过了前端程序的验证。</p>
+</blockquote>
+<h2 id="breakpoint"><a href="#breakpoint" class="headerlink" title="breakpoint"></a>breakpoint</h2><ol>
+<li>右键点击请求，选择<code>breakpoint</code>，下断点</li>
+<li>再次请求，修改响应结果<img src="/2018/04/05/how-to-modify-server-response-with-charles/bp1.png" alt="bp1.png" title="">
+<img src="/2018/04/05/how-to-modify-server-response-with-charles/bp2.png" alt="bp2.png" title="">
+<blockquote>
+<p>可以在chrome里看到此时已经是刚刚修改后的响应结果了</p>
+</blockquote>
+</li>
+</ol>
+<h1 id="碰到的问题"><a href="#碰到的问题" class="headerlink" title="碰到的问题"></a>碰到的问题</h1><ol>
+<li>有可能突然抓不到包，可以尝试<code>⇧⌘P</code>关闭<code>macOS proxy</code>，然后再次打开。</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2018/02/13/管理学习进度/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1387,118 +1527,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2017/08/02/mindmap-for-learning-javascript/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bazinga">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="doubanhelp">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/02/mindmap-for-learning-javascript/" itemprop="url">mindmap for learning javascript</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-02T20:48:00+08:00">
-                2017-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <img src="/2017/08/02/mindmap-for-learning-javascript/LearningJavascript.png" alt="LearningJavascript.png" title="">
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1549,7 +1577,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>

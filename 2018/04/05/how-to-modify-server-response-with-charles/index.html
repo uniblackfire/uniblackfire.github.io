@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Node.js," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -95,18 +95,24 @@
 
 
 
-<meta name="description" content="Mastering Async Await in Node.js http://heeroluo.net/article/detail/130/async-flow-control https://mp.weixin.qq.com/s?__biz=MzIyMzAwNzExNg==&amp;amp;mid=209354478&amp;amp;idx=1&amp;amp;sn=edd70e826b6f9e8a570024f4">
-<meta name="keywords" content="Node.js">
+<meta name="description" content="起因网易云音乐在朋友圈刷了一波推广活动，一进去要输入名字，但是我玩法比较怪，输入的是一些名人的名字，结果被提示“不是你的名字”。于是，把网址放到chrome里，打开dev tool查看，发现提交到服务器进行了验证，而且只要命中名人名字中的两个字，就会被提示报错，你们的算法还挺细致的，哈哈。 比较了一下前端请求验证名字的请求后，服务器返回的验证结果，发现只有最后一个字段不同，猜测前端判断了这个结果，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Understanding Promise and async&#x2F;await">
-<meta property="og:url" content="http://blog.douban.help/2017/08/26/Understanding-Promise-and-async-await/index.html">
+<meta property="og:title" content="how to modify server response with charles">
+<meta property="og:url" content="http://blog.douban.help/2018/04/05/how-to-modify-server-response-with-charles/index.html">
 <meta property="og:site_name" content="doubanhelp">
-<meta property="og:description" content="Mastering Async Await in Node.js http://heeroluo.net/article/detail/130/async-flow-control https://mp.weixin.qq.com/s?__biz=MzIyMzAwNzExNg==&amp;amp;mid=209354478&amp;amp;idx=1&amp;amp;sn=edd70e826b6f9e8a570024f4">
+<meta property="og:description" content="起因网易云音乐在朋友圈刷了一波推广活动，一进去要输入名字，但是我玩法比较怪，输入的是一些名人的名字，结果被提示“不是你的名字”。于是，把网址放到chrome里，打开dev tool查看，发现提交到服务器进行了验证，而且只要命中名人名字中的两个字，就会被提示报错，你们的算法还挺细致的，哈哈。 比较了一下前端请求验证名字的请求后，服务器返回的验证结果，发现只有最后一个字段不同，猜测前端判断了这个结果，">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-08-26T11:04:17.000Z">
+<meta property="og:image" content="http://blog.douban.help/2018/04/05/how-to-modify-server-response-with-charles/haha.png">
+<meta property="og:image" content="http://blog.douban.help/2018/04/05/how-to-modify-server-response-with-charles/respdata.png">
+<meta property="og:image" content="http://blog.douban.help/2018/04/05/how-to-modify-server-response-with-charles/maplocalmain.png">
+<meta property="og:image" content="http://blog.douban.help/2018/04/05/how-to-modify-server-response-with-charles/rewritesetting.png">
+<meta property="og:image" content="http://blog.douban.help/2018/04/05/how-to-modify-server-response-with-charles/bp1.png">
+<meta property="og:image" content="http://blog.douban.help/2018/04/05/how-to-modify-server-response-with-charles/bp2.png">
+<meta property="og:updated_time" content="2018-04-05T04:55:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Understanding Promise and async&#x2F;await">
-<meta name="twitter:description" content="Mastering Async Await in Node.js http://heeroluo.net/article/detail/130/async-flow-control https://mp.weixin.qq.com/s?__biz=MzIyMzAwNzExNg==&amp;amp;mid=209354478&amp;amp;idx=1&amp;amp;sn=edd70e826b6f9e8a570024f4">
+<meta name="twitter:title" content="how to modify server response with charles">
+<meta name="twitter:description" content="起因网易云音乐在朋友圈刷了一波推广活动，一进去要输入名字，但是我玩法比较怪，输入的是一些名人的名字，结果被提示“不是你的名字”。于是，把网址放到chrome里，打开dev tool查看，发现提交到服务器进行了验证，而且只要命中名人名字中的两个字，就会被提示报错，你们的算法还挺细致的，哈哈。 比较了一下前端请求验证名字的请求后，服务器返回的验证结果，发现只有最后一个字段不同，猜测前端判断了这个结果，">
+<meta name="twitter:image" content="http://blog.douban.help/2018/04/05/how-to-modify-server-response-with-charles/haha.png">
 
 
 
@@ -134,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.douban.help/2017/08/26/Understanding-Promise-and-async-await/"/>
+  <link rel="canonical" href="http://blog.douban.help/2018/04/05/how-to-modify-server-response-with-charles/"/>
 
 
 
 
 
-  <title>Understanding Promise and async/await | doubanhelp</title>
+  <title>how to modify server response with charles | doubanhelp</title>
   
 
 
@@ -299,7 +305,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2017/08/26/Understanding-Promise-and-async-await/">
+    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2018/04/05/how-to-modify-server-response-with-charles/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="bazinga">
@@ -316,7 +322,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Understanding Promise and async/await</h1>
+          <h1 class="post-title" itemprop="name headline">how to modify server response with charles</h1>
         
 
         <div class="post-meta">
@@ -328,8 +334,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-26T18:08:10+08:00">
-                2017-08-26
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-05T12:21:37+08:00">
+                2018-04-05
               </time>
             
 
@@ -363,10 +369,35 @@
       
 
       
-        <p><a href="https://blog.risingstack.com/mastering-async-await-in-nodejs/" target="_blank" rel="external">Mastering Async Await in Node.js</a></p>
-<p><a href="http://heeroluo.net/article/detail/130/async-flow-control" target="_blank" rel="external">http://heeroluo.net/article/detail/130/async-flow-control</a></p>
-<p><a href="https://mp.weixin.qq.com/s?__biz=MzIyMzAwNzExNg==&amp;mid=209354478&amp;idx=1&amp;sn=edd70e826b6f9e8a570024f431c5f7fe#rd" target="_blank" rel="external">https://mp.weixin.qq.com/s?__biz=MzIyMzAwNzExNg==&amp;mid=209354478&amp;idx=1&amp;sn=edd70e826b6f9e8a570024f431c5f7fe#rd</a></p>
-<p><a href="http://es6.ruanyifeng.com/#docs/async" target="_blank" rel="external">http://es6.ruanyifeng.co·m/#docs/async</a></p>
+        <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>网易云音乐在朋友圈刷了一波<a href="https://st.music.163.com/c/m2-spec/138/index.html?userid=52543138" target="_blank" rel="external">推广活动</a>，一进去要输入名字，但是我玩法比较怪，输入的是一些名人的名字，结果被提示“不是你的名字”。<br>于是，把网址放到chrome里，打开dev tool查看，发现提交到服务器进行了验证，而且只要命中名人名字中的两个字，就会被提示报错，你们的算法还挺细致的，哈哈。<br><img src="/2018/04/05/how-to-modify-server-response-with-charles/haha.png" alt="haha.png" title=""></p>
+<p>比较了一下前端请求验证名字的请求后，服务器返回的验证结果，发现只有最后一个字段不同，猜测前端判断了这个结果，于是想到拦截修改服务器的返回结果，骗过前端程序。<br><img src="/2018/04/05/how-to-modify-server-response-with-charles/respdata.png" alt="respdata.png" title=""></p>
+<h1 id="尝试了不同的方法"><a href="#尝试了不同的方法" class="headerlink" title="尝试了不同的方法"></a>尝试了不同的方法</h1><h2 id="map-local"><a href="#map-local" class="headerlink" title="map local"></a>map local</h2><ol>
+<li>右键点击验证请求，选择<code>save response</code>，保存响应文件</li>
+<li>按下<code>⌥⌘L</code>打开<code>Map Local Setting</code>对话框，并增加新的mapping<img src="/2018/04/05/how-to-modify-server-response-with-charles/maplocalmain.png" alt="maplocalmain.png" title="">
+</li>
+</ol>
+<blockquote>
+<p>再次尝试通过前端发送请求，确实修改了响应结果，但是由于保存的响应文件只有body的内容，没有header的内容，在这里报了一个跨域的错误，因此这个方法失败了。</p>
+</blockquote>
+<h2 id="rewrite"><a href="#rewrite" class="headerlink" title="rewrite"></a>rewrite</h2><ol>
+<li>按下<code>⌥⌘L</code>打开<code>Rewrite Settings</code>对话框，直接输入需要重写的内容<img src="/2018/04/05/how-to-modify-server-response-with-charles/rewritesetting.png" alt="rewritesetting.png" title="">
+</li>
+</ol>
+<blockquote>
+<p>此时请求之后返回的结果只修改了body部分，别的部分都是原样输出，已经通过了前端程序的验证。</p>
+</blockquote>
+<h2 id="breakpoint"><a href="#breakpoint" class="headerlink" title="breakpoint"></a>breakpoint</h2><ol>
+<li>右键点击请求，选择<code>breakpoint</code>，下断点</li>
+<li>再次请求，修改响应结果<img src="/2018/04/05/how-to-modify-server-response-with-charles/bp1.png" alt="bp1.png" title="">
+<img src="/2018/04/05/how-to-modify-server-response-with-charles/bp2.png" alt="bp2.png" title="">
+<blockquote>
+<p>可以在chrome里看到此时已经是刚刚修改后的响应结果了</p>
+</blockquote>
+</li>
+</ol>
+<h1 id="碰到的问题"><a href="#碰到的问题" class="headerlink" title="碰到的问题"></a>碰到的问题</h1><ol>
+<li>有可能突然抓不到包，可以尝试<code>⇧⌘P</code>关闭<code>macOS proxy</code>，然后再次打开。</li>
+</ol>
 
       
     </div>
@@ -394,12 +425,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/nodejs/" rel="tag"># Node.js</a>
-          
-        </div>
-      
 
       
       
@@ -409,8 +434,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/02/mindmap-for-learning-javascript/" rel="next" title="mindmap for learning javascript">
-                <i class="fa fa-chevron-left"></i> mindmap for learning javascript
+              <a href="/2018/02/13/管理学习进度/" rel="next" title="管理学习进度">
+                <i class="fa fa-chevron-left"></i> 管理学习进度
               </a>
             
           </div>
@@ -418,10 +443,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/30/wechat-public-account/" rel="prev" title="wechat public account development">
-                wechat public account development <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -469,8 +490,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -530,6 +560,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#起因"><span class="nav-number">1.</span> <span class="nav-text">起因</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#尝试了不同的方法"><span class="nav-number">2.</span> <span class="nav-text">尝试了不同的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#map-local"><span class="nav-number">2.1.</span> <span class="nav-text">map local</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rewrite"><span class="nav-number">2.2.</span> <span class="nav-text">rewrite</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#breakpoint"><span class="nav-number">2.3.</span> <span class="nav-text">breakpoint</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#碰到的问题"><span class="nav-number">3.</span> <span class="nav-text">碰到的问题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
