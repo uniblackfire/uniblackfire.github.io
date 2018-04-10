@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2018-04-05T04:55:03.000Z</updated>
+  <updated>2018-04-10T07:49:39.000Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tricks in chrome dev tools</title>
+    <link href="http://blog.douban.help/2018/04/10/tricks-in-chrome-dev-tools/"/>
+    <id>http://blog.douban.help/2018/04/10/tricks-in-chrome-dev-tools/</id>
+    <published>2018-04-10T07:46:34.000Z</published>
+    <updated>2018-04-10T07:49:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>看了google官方<a href="https://developers.google.com/web/tools/chrome-devtools/javascript/reference" target="_blank" rel="external">关于chrome dev tools调试的介绍</a>。<br>发现了两个很好用的功能：</p>
+<ol>
+<li><p>restart frame</p>
+<img src="/2018/04/10/tricks-in-chrome-dev-tools/rf.jpg" alt="rf.jpg" title="">
+</li>
+<li><p>blackbox script，可以避免单步到库文件</p>
+<img src="/2018/04/10/tricks-in-chrome-dev-tools/blackboxed.jpg" alt="blackboxed.jpg" title="">
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;看了google官方&lt;a href=&quot;https://developers.google.com/web/tools/chrome-devtools/javascript/reference&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;关于chrome 
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>how to modify server response with charles</title>
