@@ -299,6 +299,124 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2017/09/30/wechat-public-account/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bazinga">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="doubanhelp">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/30/wechat-public-account/" itemprop="url">wechat public account development</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-30T21:19:54+08:00">
+                2017-09-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li>晚上买了一周的阿里云服务器，然后利用github上开源的nodejs库（<a href="https://github.com/node-webot/co-wechat" target="_blank" rel="external">https://github.com/node-webot/co-wechat</a> ，<a href="https://github.com/node-webot/co-wechat-api" target="_blank" rel="external">https://github.com/node-webot/co-wechat-api</a> ），搭建了API服务器，sftp上传到阿里云（阿里云提供了可以ssh登录到公网IP）上，就可以用了。</li>
+<li>SSH上启动服务不能直接用node命令启动，必须用screen命令启动，避免ssh关闭的时候把服务也关闭掉（<a href="http://www.hutuseng.com/article/how-to-kill-all-detached-screen-session-in-linux" target="_blank" rel="external">http://www.hutuseng.com/article/how-to-kill-all-detached-screen-session-in-linux</a> ）。</li>
+<li>Cyberduck是一款Mac上的可视化文件传输工具。</li>
+<li>其实Webstorm也提供了SFTP上传功能，完全不需要其他工具。</li>
+<li>利用nginx代理node程序的端口，对外提供80服务（<a href="http://frontenddev.org/article/ali-cloud-ecs-use-result-6-use-nginx-do-reverse-proxy-for-nodejs.html" target="_blank" rel="external">http://frontenddev.org/article/ali-cloud-ecs-use-result-6-use-nginx-do-reverse-proxy-for-nodejs.html</a> ）。</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2017/08/26/Understanding-Promise-and-async-await/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -919,7 +1037,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
