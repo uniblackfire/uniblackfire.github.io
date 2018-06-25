@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2018-05-10T09:04:09.992Z</updated>
+  <updated>2018-06-25T04:09:04.880Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>capture banned website with charles and switchyomega</title>
+    <link href="http://blog.douban.help/2018/06/25/capture-banned-website-with-charles-and-switchyomega/"/>
+    <id>http://blog.douban.help/2018/06/25/capture-banned-website-with-charles-and-switchyomega/</id>
+    <published>2018-06-25T04:08:35.000Z</published>
+    <updated>2018-06-25T04:09:04.880Z</updated>
+    
+    <content type="html"><![CDATA[<p>为了对某国外被墙的网站进行抓包，在网上搜索之后，发现很多说要关闭VPN才能用Charles抓包，明显这是不可能的。<br>于是想到把Charles作为代理服务器，让他连接VPN，然后浏览器把Charles作为代理，即可完成抓包。<br>即：VPN -&gt; Charles -&gt; 浏览器<br>首先在Charles中设置External Proxy Setting，设置为VPN软件在系统内设置的代理，此时Charles已经翻墙。<br><img src="/2018/06/25/capture-banned-website-with-charles-and-switchyomega/external.png" alt="external.png" title=""><br>由于浏览器默认使用系统的代理，所以打开预先在Chrome浏览器内安装的SwitchyOmega，增加如图的配置，即可让浏览器把Charles作为代理，并切换到该配置，<br><img src="/2018/06/25/capture-banned-website-with-charles-and-switchyomega/switch.png" alt="switch.png" title=""></p>
+<p>参考：<a href="https://cloud.tencent.com/developer/article/1032655" target="_blank" rel="external">抓包神器之Charles，常用功能都在这里了</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;为了对某国外被墙的网站进行抓包，在网上搜索之后，发现很多说要关闭VPN才能用Charles抓包，明显这是不可能的。&lt;br&gt;于是想到把Charles作为代理服务器，让他连接VPN，然后浏览器把Charles作为代理，即可完成抓包。&lt;br&gt;即：VPN -&amp;gt; Charles
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>draw a triangle with rounded corners</title>

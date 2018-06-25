@@ -95,20 +95,20 @@
 
 
 
-<meta name="description" content="看了google官方关于chrome dev tools调试的介绍。发现了两个很好用的功能：  restart frame   blackbox script，可以避免单步到库文件">
+<meta name="description" content="为了对某国外被墙的网站进行抓包，在网上搜索之后，发现很多说要关闭VPN才能用Charles抓包，明显这是不可能的。于是想到把Charles作为代理服务器，让他连接VPN，然后浏览器把Charles作为代理，即可完成抓包。即：VPN -&amp;gt; Charles -&amp;gt; 浏览器首先在Charles中设置External Proxy Setting，设置为VPN软件在系统内设置的代理，此时Charl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="tricks in chrome dev tools">
-<meta property="og:url" content="http://blog.douban.help/2018/04/10/tricks-in-chrome-dev-tools/index.html">
+<meta property="og:title" content="capture banned website with charles and switchyomega">
+<meta property="og:url" content="http://blog.douban.help/2018/06/25/capture-banned-website-with-charles-and-switchyomega/index.html">
 <meta property="og:site_name" content="doubanhelp">
-<meta property="og:description" content="看了google官方关于chrome dev tools调试的介绍。发现了两个很好用的功能：  restart frame   blackbox script，可以避免单步到库文件">
+<meta property="og:description" content="为了对某国外被墙的网站进行抓包，在网上搜索之后，发现很多说要关闭VPN才能用Charles抓包，明显这是不可能的。于是想到把Charles作为代理服务器，让他连接VPN，然后浏览器把Charles作为代理，即可完成抓包。即：VPN -&amp;gt; Charles -&amp;gt; 浏览器首先在Charles中设置External Proxy Setting，设置为VPN软件在系统内设置的代理，此时Charl">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://blog.douban.help/2018/04/10/tricks-in-chrome-dev-tools/rf.jpg">
-<meta property="og:image" content="http://blog.douban.help/2018/04/10/tricks-in-chrome-dev-tools/blackboxed.jpg">
-<meta property="og:updated_time" content="2018-04-10T07:49:39.000Z">
+<meta property="og:image" content="http://blog.douban.help/2018/06/25/capture-banned-website-with-charles-and-switchyomega/external.png">
+<meta property="og:image" content="http://blog.douban.help/2018/06/25/capture-banned-website-with-charles-and-switchyomega/switch.png">
+<meta property="og:updated_time" content="2018-06-25T04:09:04.880Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tricks in chrome dev tools">
-<meta name="twitter:description" content="看了google官方关于chrome dev tools调试的介绍。发现了两个很好用的功能：  restart frame   blackbox script，可以避免单步到库文件">
-<meta name="twitter:image" content="http://blog.douban.help/2018/04/10/tricks-in-chrome-dev-tools/rf.jpg">
+<meta name="twitter:title" content="capture banned website with charles and switchyomega">
+<meta name="twitter:description" content="为了对某国外被墙的网站进行抓包，在网上搜索之后，发现很多说要关闭VPN才能用Charles抓包，明显这是不可能的。于是想到把Charles作为代理服务器，让他连接VPN，然后浏览器把Charles作为代理，即可完成抓包。即：VPN -&amp;gt; Charles -&amp;gt; 浏览器首先在Charles中设置External Proxy Setting，设置为VPN软件在系统内设置的代理，此时Charl">
+<meta name="twitter:image" content="http://blog.douban.help/2018/06/25/capture-banned-website-with-charles-and-switchyomega/external.png">
 
 
 
@@ -136,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.douban.help/2018/04/10/tricks-in-chrome-dev-tools/"/>
+  <link rel="canonical" href="http://blog.douban.help/2018/06/25/capture-banned-website-with-charles-and-switchyomega/"/>
 
 
 
 
 
-  <title>tricks in chrome dev tools | doubanhelp</title>
+  <title>capture banned website with charles and switchyomega | doubanhelp</title>
   
 
 
@@ -301,7 +301,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2018/04/10/tricks-in-chrome-dev-tools/">
+    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2018/06/25/capture-banned-website-with-charles-and-switchyomega/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="bazinga">
@@ -318,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">tricks in chrome dev tools</h1>
+          <h1 class="post-title" itemprop="name headline">capture banned website with charles and switchyomega</h1>
         
 
         <div class="post-meta">
@@ -330,8 +330,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T15:46:34+08:00">
-                2018-04-10
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-25T12:08:35+08:00">
+                2018-06-25
               </time>
             
 
@@ -365,15 +365,8 @@
       
 
       
-        <p>看了google官方<a href="https://developers.google.com/web/tools/chrome-devtools/javascript/reference" target="_blank" rel="external">关于chrome dev tools调试的介绍</a>。<br>发现了两个很好用的功能：</p>
-<ol>
-<li><p>restart frame</p>
-<img src="/2018/04/10/tricks-in-chrome-dev-tools/rf.jpg" alt="rf.jpg" title="">
-</li>
-<li><p>blackbox script，可以避免单步到库文件</p>
-<img src="/2018/04/10/tricks-in-chrome-dev-tools/blackboxed.jpg" alt="blackboxed.jpg" title="">
-</li>
-</ol>
+        <p>为了对某国外被墙的网站进行抓包，在网上搜索之后，发现很多说要关闭VPN才能用Charles抓包，明显这是不可能的。<br>于是想到把Charles作为代理服务器，让他连接VPN，然后浏览器把Charles作为代理，即可完成抓包。<br>即：VPN -&gt; Charles -&gt; 浏览器<br>首先在Charles中设置External Proxy Setting，设置为VPN软件在系统内设置的代理，此时Charles已经翻墙。<br><img src="/2018/06/25/capture-banned-website-with-charles-and-switchyomega/external.png" alt="external.png" title=""><br>由于浏览器默认使用系统的代理，所以打开预先在Chrome浏览器内安装的SwitchyOmega，增加如图的配置，即可让浏览器把Charles作为代理，并切换到该配置，<br><img src="/2018/06/25/capture-banned-website-with-charles-and-switchyomega/switch.png" alt="switch.png" title=""></p>
+<p>参考：<a href="https://cloud.tencent.com/developer/article/1032655" target="_blank" rel="external">抓包神器之Charles，常用功能都在这里了</a></p>
 
       
     </div>
@@ -410,8 +403,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/05/how-to-modify-server-response-with-charles/" rel="next" title="how to modify server response with charles">
-                <i class="fa fa-chevron-left"></i> how to modify server response with charles
+              <a href="/2018/05/10/corners/" rel="next" title="draw a triangle with rounded corners">
+                <i class="fa fa-chevron-left"></i> draw a triangle with rounded corners
               </a>
             
           </div>
@@ -419,10 +412,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/23/canvas-still-visible-when-outer-div-is-set-to-overflow-hidden/" rel="prev" title="canvas still visible when outer div is set to overflow:hidden">
-                canvas still visible when outer div is set to overflow:hidden <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
