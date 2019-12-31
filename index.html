@@ -299,6 +299,132 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2019/12/31/2019年12月黑苹果折腾笔记及经验分享/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bazinga">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="doubanhelp">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/31/2019年12月黑苹果折腾笔记及经验分享/" itemprop="url">2019年12月黑苹果折腾笔记及经验分享</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-31T21:03:12+08:00">
+                2019-12-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="我的配置"><a href="#我的配置" class="headerlink" title="我的配置"></a>我的配置</h2><ol>
+<li>CPU: Intel i5 4590</li>
+<li>主板: 华硕B85 Pro Gamer</li>
+<li>显卡: 蓝宝石 RX570 4G</li>
+</ol>
+<h2 id="折腾方法"><a href="#折腾方法" class="headerlink" title="折腾方法"></a>折腾方法</h2><ol>
+<li>下载<a href="https://blog.daliansky.net/macOS-Catalina-10.15.2-19C57-Release-version-with-Clover-5100-original-image-Double-EFI-Version.html" target="_blank" rel="external">黑果小兵的10.15.2的镜像</a></li>
+<li>balenaEthcer写入镜像到一个优盘</li>
+<li>开机设置BIOS里为优盘启动</li>
+<li>安装macos</li>
+<li>进入macos系统后，打开clover configurator，打开左侧的<code>Mount EFI</code>，查看右侧的<code>Efi Partitions</code>，分别<code>Mount Partition</code>硬盘和启动优盘，然后分别<code>Open Partition</code>，把启动优盘里的所有文件拷贝进硬盘里，这就实现了硬盘启动</li>
+<li>重启电脑，关闭BIOS里的串行设备！（解决了睡眠唤醒后黑屏的问题！！！）</li>
+<li>设置启动顺序，为硬盘上的UEFI开头的启动项！</li>
+<li>打开clover configurator，挂载本地硬盘，打开<code>EFI</code>文件夹，右键点击<code>config.plist</code>，选择<code>clover configurator</code>打开，选择左侧的<code>SMBIOS</code>，选择右侧的“上下”箭头的图标，选择<code>iMacPro1,1</code>的机型（开启独立显卡的硬件加速）</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2019/04/03/JS-Date函数比较/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1446,129 +1572,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.douban.help/2017/12/29/something-about-module-in-nodejs/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="bazinga">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="doubanhelp">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/29/something-about-module-in-nodejs/" itemprop="url">something about module in nodejs</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-29T10:41:35+08:00">
-                2017-12-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="require-object-is-just-a-shallow-copy-of-module-exports"><a href="#require-object-is-just-a-shallow-copy-of-module-exports" class="headerlink" title="require object is just a shallow copy of module exports"></a>require object is just a shallow copy of module exports</h2><p>test code as below:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// main.js</span></div><div class="line"><span class="keyword">var</span> a = <span class="built_in">require</span>(<span class="string">'./mod'</span>)</div><div class="line"></div><div class="line">setInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in main'</span>, a.aaa)</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in main'</span>, a.x)</div><div class="line"></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'======'</span>);</div><div class="line">&#125;, <span class="number">500</span>);</div><div class="line"></div><div class="line"><span class="comment">// mod.js</span></div><div class="line"><span class="keyword">let</span> aaa = &#123;<span class="attr">a</span>: <span class="number">3</span>, <span class="attr">b</span>: &#123;<span class="attr">xx</span>: <span class="number">1</span>&#125;&#125;</div><div class="line"><span class="keyword">let</span> x = <span class="number">1</span></div><div class="line">setInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</div><div class="line">    aaa.a++;</div><div class="line">    aaa.b.xx += <span class="number">1</span>;</div><div class="line">    x++;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in mod'</span>, aaa)</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'in mod'</span>, x)</div><div class="line">&#125;, <span class="number">500</span>);</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = &#123;<span class="attr">aaa</span>: aaa, <span class="attr">x</span>: x&#125;;</div></pre></td></tr></table></figure>
-<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ol>
-<li><a href="https://www.zhihu.com/question/56820346" target="_blank" rel="external">require，import区别？</a></li>
-<li><a href="http://es6.ruanyifeng.com/#docs/module-loader#ES6-%E6%A8%A1%E5%9D%97%E4%B8%8E-CommonJS-%E6%A8%A1%E5%9D%97%E7%9A%84%E5%B7%AE%E5%BC%82" target="_blank" rel="external">Module 的加载实现</a></li>
-<li><a href="http://imweb.io/topic/582293894067ce9726778be9" target="_blank" rel="external">Node中没搞明白require和import，你会被坑的很惨</a></li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1614,7 +1622,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">21</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1627,7 +1635,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

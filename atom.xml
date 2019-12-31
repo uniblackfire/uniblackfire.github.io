@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2019-04-03T13:10:41.297Z</updated>
+  <updated>2019-12-31T13:17:29.165Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -16,11 +16,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2019年12月黑苹果折腾笔记及经验分享</title>
+    <link href="http://blog.douban.help/2019/12/31/2019%E5%B9%B412%E6%9C%88%E9%BB%91%E8%8B%B9%E6%9E%9C%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0%E5%8F%8A%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    <id>http://blog.douban.help/2019/12/31/2019年12月黑苹果折腾笔记及经验分享/</id>
+    <published>2019-12-31T13:03:12.000Z</published>
+    <updated>2019-12-31T13:17:29.165Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="我的配置"><a href="#我的配置" class="headerlink" title="我的配置"></a>我的配置</h2><ol>
+<li>CPU: Intel i5 4590</li>
+<li>主板: 华硕B85 Pro Gamer</li>
+<li>显卡: 蓝宝石 RX570 4G</li>
+</ol>
+<h2 id="折腾方法"><a href="#折腾方法" class="headerlink" title="折腾方法"></a>折腾方法</h2><ol>
+<li>下载<a href="https://blog.daliansky.net/macOS-Catalina-10.15.2-19C57-Release-version-with-Clover-5100-original-image-Double-EFI-Version.html" target="_blank" rel="external">黑果小兵的10.15.2的镜像</a></li>
+<li>balenaEthcer写入镜像到一个优盘</li>
+<li>开机设置BIOS里为优盘启动</li>
+<li>安装macos</li>
+<li>进入macos系统后，打开clover configurator，打开左侧的<code>Mount EFI</code>，查看右侧的<code>Efi Partitions</code>，分别<code>Mount Partition</code>硬盘和启动优盘，然后分别<code>Open Partition</code>，把启动优盘里的所有文件拷贝进硬盘里，这就实现了硬盘启动</li>
+<li>重启电脑，关闭BIOS里的串行设备！（解决了睡眠唤醒后黑屏的问题！！！）</li>
+<li>设置启动顺序，为硬盘上的UEFI开头的启动项！</li>
+<li>打开clover configurator，挂载本地硬盘，打开<code>EFI</code>文件夹，右键点击<code>config.plist</code>，选择<code>clover configurator</code>打开，选择左侧的<code>SMBIOS</code>，选择右侧的“上下”箭头的图标，选择<code>iMacPro1,1</code>的机型（开启独立显卡的硬件加速）</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;我的配置&quot;&gt;&lt;a href=&quot;#我的配置&quot; class=&quot;headerlink&quot; title=&quot;我的配置&quot;&gt;&lt;/a&gt;我的配置&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;CPU: Intel i5 4590&lt;/li&gt;
+&lt;li&gt;主板: 华硕B85 Pro Gamer&lt;/li&gt;
+&lt;li
+    
+    </summary>
+    
+    
+      <category term="apple 黑苹果 装机" scheme="http://blog.douban.help/tags/apple-%E9%BB%91%E8%8B%B9%E6%9E%9C-%E8%A3%85%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JS Date函数比较</title>
     <link href="http://blog.douban.help/2019/04/03/JS-Date%E5%87%BD%E6%95%B0%E6%AF%94%E8%BE%83/"/>
     <id>http://blog.douban.help/2019/04/03/JS-Date函数比较/</id>
     <published>2019-04-03T13:09:46.000Z</published>
-    <updated>2019-04-03T13:10:41.297Z</updated>
+    <updated>2019-04-03T13:10:41.000Z</updated>
     
     <content type="html"><![CDATA[<img src="/2019/04/03/JS-Date函数比较/date.png" alt="date.png" title="">
 ]]></content>
@@ -40,7 +78,7 @@
     <link href="http://blog.douban.help/2019/03/27/Vue%E5%9F%BA%E7%A1%80/"/>
     <id>http://blog.douban.help/2019/03/27/Vue基础/</id>
     <published>2019-03-27T07:16:26.000Z</published>
-    <updated>2019-03-27T07:17:10.160Z</updated>
+    <updated>2019-03-27T07:17:10.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Vue-基础"><a href="#Vue-基础" class="headerlink" title="Vue 基础"></a>Vue 基础</h1><ol>
 <li><p>由于 JavaScript 的限制，Vue 不能检测以下变动的数组：</p>
@@ -606,33 +644,6 @@
     
       &lt;h2 id=&quot;start-a-new-life&quot;&gt;&lt;a href=&quot;#start-a-new-life&quot; class=&quot;headerlink&quot; title=&quot;start a new life&quot;&gt;&lt;/a&gt;start a new life&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;read &lt;em
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://blog.douban.help/2017/07/19/hello-world/"/>
-    <id>http://blog.douban.help/2017/07/19/hello-world/</id>
-    <published>2017-07-19T11:15:34.000Z</published>
-    <updated>2017-07-19T11:15:34.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
     
     </summary>
     
