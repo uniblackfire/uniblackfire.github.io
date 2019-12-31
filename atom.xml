@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.douban.help/"/>
-  <updated>2019-12-31T13:17:29.165Z</updated>
+  <updated>2019-12-31T13:25:45.518Z</updated>
   <id>http://blog.douban.help/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.douban.help/2019/12/31/2019%E5%B9%B412%E6%9C%88%E9%BB%91%E8%8B%B9%E6%9E%9C%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0%E5%8F%8A%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     <id>http://blog.douban.help/2019/12/31/2019年12月黑苹果折腾笔记及经验分享/</id>
     <published>2019-12-31T13:03:12.000Z</published>
-    <updated>2019-12-31T13:17:29.165Z</updated>
+    <updated>2019-12-31T13:25:45.518Z</updated>
     
     <content type="html"><![CDATA[<h2 id="我的配置"><a href="#我的配置" class="headerlink" title="我的配置"></a>我的配置</h2><ol>
 <li>CPU: Intel i5 4590</li>
@@ -36,6 +36,11 @@
 <li>重启电脑，关闭BIOS里的串行设备！（解决了睡眠唤醒后黑屏的问题！！！）</li>
 <li>设置启动顺序，为硬盘上的UEFI开头的启动项！</li>
 <li>打开clover configurator，挂载本地硬盘，打开<code>EFI</code>文件夹，右键点击<code>config.plist</code>，选择<code>clover configurator</code>打开，选择左侧的<code>SMBIOS</code>，选择右侧的“上下”箭头的图标，选择<code>iMacPro1,1</code>的机型（开启独立显卡的硬件加速）</li>
+</ol>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li><a href="https://blog.csdn.net/weixin_43845039/article/details/88701810" target="_blank" rel="external">i5 4590+ASUS B85 Pro Gamer+RX570黑苹果10.14.3的EFI分享</a></li>
+<li>/2019/12/31/2019年12月黑苹果折腾笔记及经验分享/notes.pdf
+</li>
 </ol>
 ]]></content>
     
